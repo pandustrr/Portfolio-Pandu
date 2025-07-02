@@ -1,16 +1,14 @@
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 150px 0 100px;
     gap: 40px;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 .hero-content {
-    flex: 1;
     max-width: 600px;
-    padding-inline: 50px;
 }
 
 .hero-title {
@@ -69,7 +67,6 @@
 }
 
 .hero-image {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
