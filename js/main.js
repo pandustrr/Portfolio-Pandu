@@ -1,4 +1,3 @@
-// Load components
 document.addEventListener('DOMContentLoaded', function() {
     // Load navbar
     fetch('components/navbar.html')
@@ -82,33 +81,7 @@ function setupNavbar() {
     }
 }
 
-// Contact form functionality
-function setupContactForm() {
-    const contactForm = document.querySelector('.contact-form');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = this.querySelector('input[type="text"]').value;
-            const email = this.querySelector('input[type="email"]').value;
-            const subject = this.querySelectorAll('input[type="text"]')[1].value;
-            const message = this.querySelector('textarea').value;
-            
-            // Here you would typically send the form data to a server
-            console.log('Form submitted:', { name, email, subject, message });
-            
-            // Show success message
-            alert('Pesan Anda telah terkirim! Terima kasih telah menghubungi saya.');
-            
-            // Reset form
-            this.reset();
-        });
-    }
-}
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();

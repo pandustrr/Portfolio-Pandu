@@ -77,10 +77,10 @@
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     box-shadow: var(--shadow);
     opacity: 0;
-    animation: fadeIn 1s ease 1.2s forwards;
+    animation: fadeIn 0.5s ease 1s forwards;
 }
 
 /* === Animations === */

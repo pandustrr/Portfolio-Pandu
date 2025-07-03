@@ -1,4 +1,3 @@
-// Animation on scroll
 document.addEventListener('DOMContentLoaded', function() {
     // Fungsi untuk mengecek elemen yang terlihat di viewport
     const animateOnScroll = function() {
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
     
-    // Jalankan saat halaman dimuat
     animateOnScroll();
     
     // Jalankan saat scroll
@@ -32,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (heroCta) heroCta.style.animation = 'fadeInUp 1s ease 0.9s forwards';
     if (heroImage) heroImage.style.animation = 'fadeIn 1s ease 1.2s forwards';
 });
-// Add CSS animations to the head
+
 const style = document.createElement('style');
 style.textContent = `
     @keyframes fadeInUp {
