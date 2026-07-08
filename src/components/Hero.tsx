@@ -65,9 +65,13 @@ const Hero = () => {
                 {content.ctaPrimary}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
               </Link>
-              <Link href="#contact" className="btn-secondary px-12 py-5 w-full sm:w-auto">
+              <a 
+                href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/Pandu Satria CV ATS-NEW.pdf`}
+                download="Pandu Satria CV ATS-NEW.pdf"
+                className="btn-secondary px-12 py-5 w-full sm:w-auto"
+              >
                 {content.ctaSecondary}
-              </Link>
+              </a>
             </motion.div>
           </div>
 
