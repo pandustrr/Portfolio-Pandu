@@ -9,5 +9,5 @@
   <rect x="24" y="24" width="752" height="402" fill="none" stroke="#f5f0e8" stroke-opacity="0.25" stroke-width="1.5"/>
   <circle cx="400" cy="180" r="42" fill="none" stroke="#f5f0e8" stroke-opacity="0.3" stroke-width="2"/>
   <text x="400" y="270" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f5f0e8" text-anchor="middle" letter-spacing="3">SCREENSHOT 1 — BERANDA</text>
-  <text x="400" y="300" font-family="Arial, sans-serif" font-size="12" fill="#f5f0e8" fill-opacity="0.6" text-anchor="middle" letter-spacing="2">GAMBAR SEMENTARA — GANTI DI CONSTANTS/INDEX.TS</text>
+
 </svg>
