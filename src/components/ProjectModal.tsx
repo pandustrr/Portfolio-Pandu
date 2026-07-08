@@ -60,7 +60,8 @@ const ProjectModal = ({ isOpen, onClose, title, description, gallery, period, st
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.98 }}
             transition={{ duration: 0.3 }}
-            className="relative z-10 w-full max-w-4xl max-h-[90vh] overflow-y-auto glass-card bg-background"
+            className="relative z-10 w-full max-w-2xl max-h-[80vh] overflow-y-auto border border-primary/10"
+            style={{ backgroundColor: "var(--background)" }}
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -73,7 +74,7 @@ const ProjectModal = ({ isOpen, onClose, title, description, gallery, period, st
 
             {/* Gallery */}
             {images.length > 0 && (
-              <div className="relative h-64 md:h-96 bg-primary/5 overflow-hidden">
+              <div className="relative h-44 md:h-56 bg-primary/5 overflow-hidden">
                 <img
                   src={images[activeIndex]}
                   alt={`${t(title)} - ${activeIndex + 1}`}
@@ -118,7 +119,7 @@ const ProjectModal = ({ isOpen, onClose, title, description, gallery, period, st
                   <button
                     key={i}
                     onClick={() => setActiveIndex(i)}
-                    className={`shrink-0 w-20 h-14 overflow-hidden rounded border-2 transition-colors ${i === activeIndex ? "border-accent" : "border-transparent opacity-60 hover:opacity-100"}`}
+                    className={`shrink-0 w-16 h-10 overflow-hidden rounded border-2 transition-colors ${i === activeIndex ? "border-accent" : "border-transparent opacity-60 hover:opacity-100"}`}
                   >
                     <img src={img} alt={`Thumbnail ${i + 1}`} className="w-full h-full object-cover" />
                   </button>
@@ -127,7 +128,7 @@ const ProjectModal = ({ isOpen, onClose, title, description, gallery, period, st
             )}
 
             {/* Content */}
-            <div className="p-8">
+            <div className="p-5">
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <span className="px-3 py-1 bg-primary/5 text-primary text-[10px] font-bold uppercase tracking-wider border border-primary/10">
                   {t(status)}
@@ -135,7 +136,7 @@ const ProjectModal = ({ isOpen, onClose, title, description, gallery, period, st
                 <span className="text-xs text-foreground/40 font-medium uppercase tracking-wide">{period}</span>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 font-heading">{t(title)}</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4 font-heading">{t(title)}</h3>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {tags.map((tag) => (
@@ -145,8 +146,8 @@ const ProjectModal = ({ isOpen, onClose, title, description, gallery, period, st
                 ))}
               </div>
 
-              <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary/50 mb-2">{t(UI_TEXT).aboutProject}</h4>
-              <p className="text-foreground/70 text-sm leading-relaxed mb-8">
+              <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-2">{t(UI_TEXT).aboutProject}</h4>
+              <p className="text-foreground/90 text-sm leading-relaxed mb-5">
                 {t(description)}
               </p>
 

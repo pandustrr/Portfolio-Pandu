@@ -27,11 +27,6 @@ const Hero = () => {
         <div className="h-32 w-px bg-primary" />
       </div>
 
-      {/* Top Decorative Element - Filling the 'Empty' space */}
-      <div className="absolute top-12 left-12 hidden lg:flex items-center gap-4 opacity-30 select-none">
-        <div className="w-12 h-px bg-primary" />
-        <span className="text-[10px] font-bold tracking-[0.4em] uppercase text-primary">Portfolio v4.0 // 2026</span>
-      </div>
 
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center max-w-7xl mx-auto relative">
