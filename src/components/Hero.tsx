@@ -112,7 +112,7 @@ const Hero = () => {
               {/* Photo */}
               <div className="relative h-full w-auto z-10">
                  <img
-                   src="/photo-pandu.png"
+                   src={`${process.env.NEXT_PUBLIC_BASE_PATH}/photo-pandu.png`}
                    alt="Pandu Satria"
                    className="h-full w-auto object-contain drop-shadow-2xl -scale-x-100"
                  />
