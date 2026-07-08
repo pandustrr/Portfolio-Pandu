@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { HERO_CONTENT } from "@/constants";
 import { ArrowRightIcon as ArrowRight, ChevronDownIcon as ChevronDown, ArrowDownTrayIcon as Download } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -102,10 +103,13 @@ const Hero = () => {
 
               {/* Photo */}
               <div className="relative h-full w-auto z-10">
-                 <img
-                   src={`${process.env.NEXT_PUBLIC_BASE_PATH}/photo-pandu.png`}
+                 <Image
+                   src="/photo-pandu.png"
                    alt="Pandu Satria"
+                   width={500}
+                   height={600}
                    className="h-full w-auto object-contain drop-shadow-2xl -scale-x-100"
+                   priority
                  />
               </div>
             </div>

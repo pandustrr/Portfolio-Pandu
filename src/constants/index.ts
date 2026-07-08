@@ -22,6 +22,8 @@ import {
   MoonIcon as Moon
 } from "@heroicons/react/24/outline";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const NAV_LINKS = [
   { name: { id: "Beranda", en: "Home" }, href: "#", icon: Rocket },
   { name: { id: "Tentang", en: "About" }, href: "#about", icon: User },
@@ -154,8 +156,8 @@ export const PROJECTS = [
       id: "Sistem web berbasis Laravel 11 dan Python untuk mengelola data Produksi budidaya ikan lele dengan integrasi metode AI ARIMA dan Fuzzy Logic.",
       en: "Web-based system using Laravel 11 and Python to manage catfish production data with AI ARIMA and Fuzzy Logic integration."
     },
-    image: "/project-placeholder.svg",
-    gallery: ["/gallery-placeholder-1.svg", "/gallery-placeholder-2.svg", "/gallery-placeholder-3.svg"],
+    image: `${BASE}/project-placeholder.svg`,
+    gallery: [`${BASE}/gallery-placeholder-1.svg`, `${BASE}/gallery-placeholder-2.svg`, `${BASE}/gallery-placeholder-3.svg`],
     status: { id: "Selesai", en: "Done" },
     tags: ["Laravel", "Python", "AI"],
     github: "#",
@@ -168,8 +170,8 @@ export const PROJECTS = [
       id: "Sistem informasi bimbel berbasis Laravel 11 dengan fitur multi-role (admin, guru, siswa) dan manajemen jadwal les.",
       en: "Bimbel information system based on Laravel 11 with multi-role features (admin, teacher, student) and schedule management."
     },
-    image: "/project-placeholder.svg",
-    gallery: ["/gallery-placeholder-1.svg", "/gallery-placeholder-2.svg", "/gallery-placeholder-3.svg"],
+    image: `${BASE}/project-placeholder.svg`,
+    gallery: [`${BASE}/gallery-placeholder-1.svg`, `${BASE}/gallery-placeholder-2.svg`, `${BASE}/gallery-placeholder-3.svg`],
     status: { id: "Selesai", en: "Done" },
     tags: ["Laravel", "MySQL", "Tailwind CSS"],
     github: "#",
@@ -182,8 +184,8 @@ export const PROJECTS = [
       id: "Aplikasi mobile penyewaan kendaraan menggunakan React Native dan Firebase dengan pendekatan Functional Programming.",
       en: "Vehicle rental mobile application using React Native and Firebase with a Functional Programming approach."
     },
-    image: "/project-placeholder.svg",
-    gallery: ["/gallery-placeholder-1.svg", "/gallery-placeholder-2.svg", "/gallery-placeholder-3.svg"],
+    image: `${BASE}/project-placeholder.svg`,
+    gallery: [`${BASE}/gallery-placeholder-1.svg`, `${BASE}/gallery-placeholder-2.svg`, `${BASE}/gallery-placeholder-3.svg`],
     status: { id: "Selesai", en: "Done" },
     tags: ["React Native", "Firebase", "JavaScript"],
     github: "#",
@@ -196,8 +198,8 @@ export const PROJECTS = [
       id: "Aplikasi kasir sederhana berbasis C# untuk simulasi operasional kafe kecil dengan fitur transaksi lengkap.",
       en: "Simple cashier application based on C# for small cafe operational simulation with complete transaction features."
     },
-    image: "/project-placeholder.svg",
-    gallery: ["/gallery-placeholder-1.svg", "/gallery-placeholder-2.svg", "/gallery-placeholder-3.svg"],
+    image: `${BASE}/project-placeholder.svg`,
+    gallery: [`${BASE}/gallery-placeholder-1.svg`, `${BASE}/gallery-placeholder-2.svg`, `${BASE}/gallery-placeholder-3.svg`],
     status: { id: "Selesai", en: "Done" },
     tags: ["C#", "PostgreSQL"],
     github: "#",
@@ -210,8 +212,8 @@ export const PROJECTS = [
       id: "Aplikasi web untuk manajemen proyek dan perencanaan tim dengan fitur kolaborasi real-time.",
       en: "Web application for project management and team planning with real-time collaboration features."
     },
-    image: "/project-placeholder.svg",
-    gallery: ["/gallery-placeholder-1.svg", "/gallery-placeholder-2.svg", "/gallery-placeholder-3.svg"],
+    image: `${BASE}/project-placeholder.svg`,
+    gallery: [`${BASE}/gallery-placeholder-1.svg`, `${BASE}/gallery-placeholder-2.svg`, `${BASE}/gallery-placeholder-3.svg`],
     status: { id: "Selesai", en: "Done" },
     tags: ["Laravel", "React JS", "MySQL", "Tailwind"],
     github: "#",
