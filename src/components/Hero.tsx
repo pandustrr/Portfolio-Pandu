@@ -104,7 +104,7 @@ const Hero = () => {
               {/* Photo */}
               <div className="relative h-full w-auto z-10">
                  <Image
-                   src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/photo-pandu.png`}
+                   src="/photo-pandu.png"
                    alt="Pandu Satria"
                    width={500}
                    height={600}
