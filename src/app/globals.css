@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+
+  /* Palette - Pure Bright Coffee (Latar Cerah, Font Coffee) */
+  --color-background: #FFFFFF; 
+  --color-foreground: #1A110B; /* Deep Espresso */
+  --color-card: #FFFFFF;
+  --color-primary: #4A3326;   /* Rich Mocha */
+  --color-accent: #A67049;    /* Cinnamon/Amber Accent */
+  --color-border: #F2EFEB;    /* Soft Latte Border */
+}
+
+@layer base {
+  :root {
+    --background: #FFFFFF;
+    --foreground: #1A110B;
+    --card: #FFFFFF;
+    --primary: #4A3326;
+    --accent: #A67049;
+    --border: #F2EFEB;
+    --glass-bg: rgba(255, 255, 255, 0.98);
+    --glass-border: rgba(26, 17, 11, 0.05);
+  }
+
+  body {
+    background-color: var(--background);
+    background-image: 
+      url("https://www.transparenttextures.com/patterns/clean-gray-paper.png"),
+      radial-gradient(circle at 2px 2px, var(--border) 1px, transparent 0);
+    background-size: auto, 40px 40px;
+    color: var(--foreground);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--primary);
+  }
+
+  svg {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+/* Custom Utilities - Sharp Edges (Kotak) */
+.glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(26, 17, 11, 0.08);
+}
+
+.section-padding {
+  padding: 6rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .section-padding { padding: 8rem 3rem; }
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #FFFFFF;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  border-radius: 0; 
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+}
+.btn-primary:hover { 
+  background-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(166, 112, 73, 0.3);
+}
+
+.btn-secondary {
+  border: 2px solid var(--border);
+  color: var(--primary);
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  border-radius: 0; 
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+}
+.btn-secondary:hover { 
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background-color: var(--background); }
+::-webkit-scrollbar-thumb { background-color: var(--border); }
+::-webkit-scrollbar-thumb:hover { background-color: var(--primary); }
+
+@keyframes scanline { 
+  0% { transform: translateY(-100%); } 
+  100% { transform: translateY(1000%); } 
+} 
+.animate-scanline { 
+  animation: scanline 8s linear infinite; 
+}
+
+html { scroll-behavior: smooth; }

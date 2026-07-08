@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a3c30"/>
+      <stop offset="100%" stop-color="#7a5c46"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <rect x="24" y="24" width="752" height="402" fill="none" stroke="#f5f0e8" stroke-opacity="0.25" stroke-width="1.5"/>
+  <rect x="358" y="140" width="84" height="60" rx="6" fill="none" stroke="#f5f0e8" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f5f0e8" text-anchor="middle" letter-spacing="3">SCREENSHOT 2 — DASHBOARD</text>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="12" fill="#f5f0e8" fill-opacity="0.6" text-anchor="middle" letter-spacing="2">GAMBAR SEMENTARA — GANTI DI CONSTANTS/INDEX.TS</text>
+</svg>
