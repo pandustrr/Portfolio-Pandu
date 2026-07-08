@@ -11,6 +11,7 @@ import ProjectModal from "./ProjectModal";
 interface ProjectCardProps {
   title: any;
   description: any;
+  category?: string;
   image?: string;
   gallery?: string[];
   period: string;

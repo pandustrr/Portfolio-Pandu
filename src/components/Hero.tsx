@@ -28,7 +28,7 @@ const Hero = () => {
       </div>
 
 
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto px-6 md:px-10 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center max-w-7xl mx-auto relative">
           {/* Left Content - Balanced & Clear */}
           <div className="lg:col-span-5 flex flex-col items-start text-left relative">
@@ -38,7 +38,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
             >
-              <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-primary font-heading uppercase">
+              <h1 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-primary font-heading uppercase">
                 {content.name.split(' ')[0]}<br />
                 <span className="text-transparent border-text stroke-primary opacity-80" style={{ WebkitTextStroke: '2px var(--color-primary)' }}>{content.name.split(' ')[1]}</span>
               </h1>

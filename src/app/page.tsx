@@ -80,11 +80,11 @@ export default function Home() {
             title={t({ id: "Proyek Terpilih", en: "Selected Projects" })} 
             subtitle={t({ id: "Integrasi antara kode, desain, dan solusi fungsional.", en: "The integration of code, design, and functional solutions." })} 
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24 max-w-7xl mx-auto">
             {PROJECTS.map((project, index) => (
               <motion.div
-                key={index}
+                key={project.title.en}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
