@@ -5,7 +5,6 @@ import { HERO_CONTENT } from "@/constants";
 import { ArrowRightIcon as ArrowRight, ChevronDownIcon as ChevronDown, ArrowDownTrayIcon as Download } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import dynamic from "next/dynamic";
 
 const Hero = () => {
   const { language } = useLanguage();
@@ -37,14 +36,6 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center max-w-7xl mx-auto relative">
           {/* Left Content - Balanced & Clear */}
           <div className="lg:col-span-5 flex flex-col items-start text-left relative">
-            <motion.div 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-5 py-2 bg-primary/5 rounded-full text-[11px] font-bold text-primary mb-10 border border-primary/10 tracking-[0.2em] uppercase"
-            >
-              <div className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-              {content.badge}
-            </motion.div>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}

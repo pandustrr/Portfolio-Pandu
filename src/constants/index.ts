@@ -39,7 +39,6 @@ export const HERO_CONTENT = {
     description: "Mahasiswa Informatika yang berdedikasi untuk membangun aplikasi web yang efisien, inovatif, dan berfokus pada pengalaman pengguna.",
     ctaPrimary: "Lihat Proyek",
     ctaSecondary: "Download CV",
-    badge: "Tersedia untuk proyek baru"
   },
   en: {
     name: "Pandu Satria",
@@ -48,7 +47,6 @@ export const HERO_CONTENT = {
     description: "Informatics student dedicated to building efficient, innovative, and user-centric web applications.",
     ctaPrimary: "View Projects",
     ctaSecondary: "Download CV",
-    badge: "Available for new projects"
   }
 };
 
