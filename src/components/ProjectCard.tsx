@@ -83,9 +83,6 @@ const ProjectCard = ({ title, description, image, gallery, period, status, tags,
               {t(UI_TEXT).liveDemo}
               <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
             </Link>
-            <Link href={github} onClick={(e) => e.stopPropagation()} className="flex items-center gap-2 text-xs font-bold text-primary/60 hover:text-primary transition-colors">
-              {t(UI_TEXT).viewProjects}
-            </Link>
           </div>
         </div>
       </motion.div>
